@@ -1,6 +1,6 @@
 # Vim Configuration Backup
 
-Este repositório contém um arquivo de configuração para o Vim, com diversos ajustes para produtividade e suporte a linguagens de programação. A configuração utiliza o **Vundle** para gerenciamento de plugins e inclui ferramentas para autocompletar, navegação de arquivos, integração com Git, e realce de sintaxe avançado.
+Este repositório contém um arquivo de configuração para o Vim, com diversos ajustes para produtividade e suporte a linguagens de programação. A configuração utiliza o **Vundle** para gerenciamento de plugins e inclui ferramentas para autocompletar, navegação de arquivos, integração com Git e realce de sintaxe avançado.
 
 ## Plugins Utilizados
 
@@ -26,36 +26,32 @@ Este repositório contém um arquivo de configuração para o Vim, com diversos 
 - **C/C++**: Suporte à configuração e indentação de arquivos C e C++.
 - **Outras linguagens**: Java, Ruby, Rust.
 
-## Configurações Gerais
-
-- Habilita números de linha e números relativos.
-- Indentação configurada com tabulação de 4 espaços.
-- Suporte para mouse.
-- Busca inteligente e sensível ao contexto (ignorecase e smartcase).
-- Configuração para atalhos customizados (e.g., abrir NERDTree, fzf).
-
-## Funcionalidades Adicionais
-
-- **Mapeamentos personalizados**: Atalhos para navegação e comandos comuns.
-- **GitGutter**: Visualização rápida de alterações feitas no Git.
-- **Emmet**: Expansão de HTML/CSS com atalhos rápidos.
-- **Syntastic**: Verificação automática de erros ao salvar.
-- **Autocompletar e linting**: Usando CoC para várias linguagens.
-- **Goyo/Lightline**: Modo de escrita sem distrações.
-- **Backup e Undo**: Backup e persistência de desfazer configurados.
-
 ## Como Usar
 
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/vim-config-backup ~/.vim
-    ```
+### 1. Clonar o repositório
 
-2. Instale os plugins com Vundle:
-    ```vim
-    :PluginInstall
-    ```
+Primeiro, você precisa clonar este repositório na pasta de configuração do Vim no seu sistema. Isso garantirá que todas as configurações e plugins estejam disponíveis no Vim.
 
-3. Aproveite as funcionalidades configuradas no seu Vim!
+```bash
+git clone https://github.com/Arthurregiani/vim-config.git ~/.vim
+```
 
+### 2. Instalar o Vundle
+Se ainda não tiver o Vundle instalado, execute o seguinte comando para clonar o repositório do Vundle dentro da pasta de bundles do Vim:
 
+```bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+### 3. Instalar os plugins
+Abra o Vim e execute o comando abaixo para instalar todos os plugins especificados no arquivo de configuração usando o Vundle:
+
+No vim execute
+```vim
+:PluginInstall
+```
+
+Isso irá baixar e configurar todos os plugins automaticamente.
+
+### 4. Configurações de Terminal
+Certifique-se de que seu terminal suporta o uso do mouse e caracteres especiais (como ícones do DevIcons, para isso certifique-se de usar uma 'nerd-font'). Dependendo do terminal, você pode precisar ajustar as configurações de fonte e suporte ao mouse.
